@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Template</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .container {
+      max-width: 620px;
+      margin: 10px auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .header {
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .header a img {
+      max-width: 300px;
+      height: auto;
+      display: inline-block;
+    }
+    .content {
+      padding: 20px 30px 30px 30px;
+      font-size: 16px;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .content strong {
+      color: #ef1b2f;
+    }
+    .features {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .feature-box {
+      background-color: #f9f9f9;
+      border-left: 5px solid #1d2974;
+      padding: 15px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .feature-icon {
+      font-size: 22px;
+      color: #1d2974;
+      margin-right: 12px;
+      line-height: 1.2;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 2px;
+      background-color: #1d2974;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin-bottom:20px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .footer {
+      background-color: #f1f1f1;
+      padding: 1px 30px;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+      border-radius: 12px;
+    }
+    .footer a {
+      color: #252e68;
+      text-decoration: none;
+    }
+    .social-icons {
+      margin-top: 15px;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+    @media only screen and (max-width: 620px) {
+      .container {
+        width: 95%;
+        margin: 20px auto;
+      }
+      .content, .footer {
+        padding: 20px;
+      }
+      .header a img {
+        max-width: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="https://www.servicesats.com/" target="_blank">
+        <img src="https://raw.githubusercontent.com/work784/email-links/refs/heads/main/logo.png" alt="ATS Services Logo">
+      </a>
+    </div>
+    <div class="content">
+      Hi  {{ contact.FIRSTNAME }},,<br><br>
+      Are rising EMI bounces and high customer drop-offs slowing down your recovery efforts? Most Banks and NBFCs are now shifting to a digital-first, AI-enabled collections approach — resulting in faster repayments and fewer escalations.<br>
+<br>
+      
+      <strong>At ATS, We help Institutions like yours:</strong>
+      <div class="features">
+        <div class="feature-box">
+          <div class="feature-icon"></div>
+          <div>Proactively engage customers before and after due dates—from pre-due nudges to bounce recovery. High-risk accounts are managed by field agents.</div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"></div>
+          <div>Automate outreach with AI-driven, hyper-personalized messaging across the loan cycle to encourage self-payments.</div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"></div>
+          <div>Communicate across all Omni channels: WhatsApp, SMS, Voice BOTs, Email, Google RCs and Microsites — in multiple Indian languages.</div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"></div>
+          <div>Run intelligent campaign workflows that are fully trackable, auditable, and scalable.</div>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"></div>
+          <div>Operate on a success-linked and goal-driven model, ensuring performance and accountability.</div>
+        </div>
+      </div>
+
+      <br>Let’s explore how we can build a high-performing, digital collections engine for your portfolio.
+      Would you be open to a short conversation to see how this can work for your business?
+
+      <center><a href="https://meet.brevo.com/ats-services" class="cta-button" target="_blank">Schedule a Discussion</a></center>
+ 
+<div class="footer" style="font-family: 'Segoe UI', sans-serif; color: #333333; font-size: 15px; line-height: 1.6;">
+  <br>
+    <div style="font-weight: bold; color: #343432; margin-bottom: 1px;"><CENTER>Contact us on</CENTER></div>
+    <div style="font-size: 15px;"><CENTER>
+      
+      <a href="mailto:pmo@servicesats.com?subject=Reach out with your Query" style="color:#343432; text-decoration: none;">pmo@servicesats.com</a>  | 
+      <a href="https://www.servicesats.com" target="_blank" style="color:#343432; text-decoration: none;">www.servicesats.com</a>
+      <a href="tel:+911296612045" style="color:#343432; text-decoration: none;"> | +91 129 6612 045</a> </CENTER>
+    </div>
+  
+  <div style="text-align: center; margin-top: 8px;">
+    <div style="font-weight: bold;">ATS Services Pvt. Ltd.</div>
+    Vatika Mindscapes, Tower-B, 7th Floor<br>
+    Sector 27D, Faridabad, Haryana – 121003
+ </div>
+  <!-- Social Icons Section -->
+  <div style="text-align: center; margin-top: 8px;margin-bottom:10px">
+    <span style="font-size: 15px; color: #343432;font-weight: bold;">Follow us on</span>
+    <!--<div style="margin-top: 5px;">-->
+      <a href="https://www.linkedin.com/in/ats-services-344120117" target="_blank" aria-label="LinkedIn" style="margin: 0 4px; display: inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 18px; height: 18px; vertical-align: middle;">
+      </a>
+      <a href="https://www.instagram.com/atsservicespvtltd?igsh=MTVpbjBhemQ5ZzA3bA%3D%3D" target="_blank" aria-label="Instagram" style="margin: 0 4px; display: inline-block;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 18px; height: 18px; vertical-align: middle;">
+      </a>
+    </div> <br>
+  </div>
+
+  <!-- Footer Note -->
+  <div style="text-align: center; margin-top: 10px; font-size: 12px; color: #666;">
+<center><a>View in Browser</a></center>
+    © 2025 ATS Services Pvt. Ltd. All rights reserved.
+  </div>
+</div>
+
+
